@@ -63,7 +63,6 @@ namespace big
 
 		static rage::scrNativeHandler* get_handlers()
 		{
-			[[assume((cache_handlers(), m_are_handlers_cached == true))]]
 			if (!m_are_handlers_cached) [[unlikely]]
 				cache_handlers();
 
